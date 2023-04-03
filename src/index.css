@@ -1,13 +1,143 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "Poppins";
+}
+
+.menu {
+  width: 20%;
+  background-color: #155057;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  display: list-item;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: #68b0b0;
+  padding: 15px;
+}
+
+.menu .active {
+  color: #fff;
+}
+
+.menu a:hover {
+  transition: 0.5s;
+  color: #fff;
+}
+
+.Avatar {
+  width: 180px;
+  height: 180px;
+  object-fit:inherit;
+  border-radius: 20px;
+  border: 5px solid rgb(134, 132, 132);
+}
+
+.Logo {
+  padding: 15px;
+}
+
+.body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 95px;
+  background-color: #195c64;
+}
+
+.body h1 {
+  font-size: 40px;
+  color: #fff;
+  
+}
+
+.body h2 {
+  font-size: 30px;
+  color: #559aaa;
+}
+
+.body p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.6rem;
+  margin-top: 10px;
+}
+
+.judul h1 {
+  font-size: 40px;
+  color: #fff;
+  text-decoration: underline wavy rgb(3, 49, 62);
+}
+
+.border p {
+  border-style: solid;
+  border-radius: 20px;
+  background-color: #155057;
+  height: 100%;
+  width: 55%;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: 20px 0px 0px;
+  gap: 0px 10px;
+  text-align: center;
+}
+
+.mt-4 {
+  padding-top: 8px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding-top: 0;
+  margin: 5px 0px 0px;
+  gap: 0px 10px;
+  overflow: hidden;
+  text-align: center;  
+}
+
+.gbr {
+  padding-top: 10px;
+  box-shadow: #040c16;
+}
+
+ul.award-list {
+  display: grid;
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+}
+
+ul.award-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+}
+
+ul.award-list li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  color: #ffffff;
 }
