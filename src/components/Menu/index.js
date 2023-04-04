@@ -14,6 +14,9 @@ export default class Menu extends Component {
             alt="avatar"
           />
         </div>
+        <Link to="/home" className={pathname === "/home" ? "active" : ""}>
+          Home
+        </Link>
         <Link to="/about" className={pathname === "/about" ? "active" : ""}>
           About
         </Link>

@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import React, { Component } from "react";
+import Home from "../pages/Home";
 import About from "../pages/About";
 import Educations from "../pages/Education";
 import Experiance from "../pages/Experiance";
@@ -11,8 +12,9 @@ export default class Routing extends Component {
   render() {
     return (
       <Routes>
-        <Route index element={<Navigate to="/about" replace />} />
-        <Route index element={<About />} path="/about" />
+        <Route index element={<Navigate to="/home" replace />} />
+        <Route index element={<Home />} path="/home" />
+        <Route element={<About />} path="/about" />
         <Route element={<Educations />} path="/educations" />
         <Route element={<Experiance />} path="/experiance" />
         <Route element={<Skils />} path="/skills" />
